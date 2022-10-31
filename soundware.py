@@ -16,7 +16,7 @@ write("recording0.wav", freq, recording)
 
 wv.write("recording1.wav", recording, freq, sampwidth=2)
 
-session = ftplib.FTP('ftpupload.net','eb2a_32851376','portablemachine')
+session = ftplib.FTP('FTP Server','FTP Username','FTP Password')
 file = open('recording1.wav','rb')
 session.storbinary('STOR recording1.wav', file)
 file.close()
